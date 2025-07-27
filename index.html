@@ -1,86 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yes Care Services Provider</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Care Services Provider</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
             background-color: #004c99;
-            color: #fff;
-            padding: 20px 0;
+            color: white;
             text-align: center;
+            padding: 30px 10px;
         }
 
         nav {
-            background: #ddd;
-            text-align: center;
+            background-color: #eee;
             padding: 10px;
+            text-align: center;
         }
 
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            color: #333;
+            color: #004c99;
             font-weight: bold;
         }
 
         section {
             padding: 40px 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
         h2 {
             color: #004c99;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Image Section Styling */
+        .image-showcase {
+            background-color: #222;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .image-grid div {
+            max-width: 280px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 8px;
         }
 
         footer {
             background-color: #004c99;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
+            padding: 20px 10px;
+            margin-top: 40px;
         }
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin-top: 20px;
+        .contact-details {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 40px 20px;
         }
 
-        .contact-form input, .contact-form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 1em;
+        .contact-details p {
+            font-size: 1.1em;
+            margin: 10px 0;
         }
 
-        .contact-form button {
-            background-color: #004c99;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
+        .contact-details a {
+            color: #004c99;
+            text-decoration: none;
         }
 
-        .contact-form button:hover {
-            background-color: #003366;
+        .contact-details a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1> Yes Care Services Provider</h1>
+        <h1>Care Services Provider</h1>
         <p>Daycare | Patient Care | Household Help</p>
     </header>
 
@@ -93,65 +124,47 @@
     <section id="about">
         <h2>About Us</h2>
         <p>
-            We are a trusted provider of professional staffing solutions for daycares, patient care, and household help. 
-            Our goal is to connect families and organizations with compassionate, trained, and dependable caregivers and maids. 
-            Your comfort and care are our priority.
+            We are a trusted provider of professional staffing solutions for daycares, patient care, and household help.
+            Our mission is to connect families and organizations with compassionate, trained, and dependable caregivers and maids.
+            Your comfort and care are our top priority.
         </p>
     </section>
 
-<!-- Visual Section Between About and Services -->
-<section style="background-color: #222; padding: 40px 20px; color: white; text-align: center;">
-    <h2 style="color: #fff; margin-bottom: 30px;">Our Trusted Professionals at Work</h2>
-    
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <!-- Image Section -->
+    <section class="image-showcase">
+        <h2>Our Trusted Professionals at Work</h2>
+        <div class="image-grid">
+            <!-- Line Drawing: Daycare -->
+            <div>
+                <img src="https://img.icons8.com/ios-filled/250/ffffff/baby-room.png" alt="Daycare Icon" />
+                <p>Daycare Professionals</p>
+            </div>
 
-        <!-- Line Drawing: Daycare -->
-        <div style="max-width: 280px;">
-            <img src="https://plus.unsplash.com/premium_photo-1723485703457-6a39f2c44ee6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                 alt="Daycare Icon" style="width: 100%;">
-            <p>Daycare Professionals</p>
+            <!-- Real Photo: Patient Care -->
+            <div>
+                <img src="https://images.unsplash.com/photo-1588776814546-ec7e5b2d1a2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Patient Care" />
+                <p>Compassionate Patient Care</p>
+            </div>
+
+            <!-- Line Drawing: Maid -->
+            <div>
+                <img src="https://img.icons8.com/ios-filled/250/ffffff/maid.png" alt="Maid Icon" />
+                <p>Trained Maids for Your Home</p>
+            </div>
         </div>
-
-        <!-- Dark background photo: Patient Care -->
-        <div style="max-width: 280px;">
-            <img src="https://img.freepik.com/premium-vector/continuous-one-line-drawing-pretty-female-doctor-nurse-visit-patient-who-laying-bed-hospital-handshaking-him-ask-condition-single-line-draw-design-vector-graphic-illustration_620206-5153.jpg">
-            <p>Compassionate Patient Care</p>
-        </div>
-
-        <!-- Line Drawing: Maid -->
-        <div style="max-width: 280px;">
-            <img src="https://img.icons8.com/ios-filled/250/ffffff/maid.png" 
-                 alt="Maid Icon" style="width: 100%;">
-            <p>Trained Maids for Your Home</p>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <section id="services">
         <h2>Our Services</h2>
         <ul>
             <li><strong>Daycare Staffing:</strong> Reliable and experienced childcare professionals for homes and daycare centers.</li>
             <li><strong>Patient Care:</strong> Skilled caregivers for elderly or recovering patients, ensuring 24/7 attention and comfort.</li>
-            <li><strong>Househelp:</strong> Efficient domestic help for cleaning, cooking, and other household chores.</li>
+            <li><strong>Household Maids:</strong> Efficient domestic help for cleaning, cooking, and other household chores.</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <section id="contact">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Reach out to us via phone or email:</p>
-    <ul>
-        <li><strong>Phone:</strong> +91 9686914639</li>
-        <li><strong>Email:</strong> sunilborkar72puttur@gmail.com</li>
-    </ul>
-</section>
-
-    </section>
-
-    <footer>
-        &copy; 2025 Care Services Provider. All rights reserved.
-    </footer>
-
-</body>
-</html>
+    <section id="contact" class="contact-details">
+        <h2>Contact Us</h2>
+        <p>Reach out to us anytime—our team is always available to assist you.</p>
+        <p><strong>Phone:</strong> +91 9500444319</p>
+        <p><strong>Email:</strong> <a href="mailto:yesc
